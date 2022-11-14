@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  db:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+    volumes:
+      - drf_storefront:/var/lib/mysql
+volumes:
+  drf_storefront:
+    driver: local
+    name: drf_storefront
