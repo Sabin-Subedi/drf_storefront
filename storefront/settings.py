@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'rest_framework',
     'playground',
     'debug_toolbar',
@@ -91,8 +92,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'storefront',
-        'HOST': '127.0.0.1',
-        'USER': 'root',
+        'HOST': 'localhost',
+        'USER': '127.0.0.1',
         'PASSWORD': 'password'
     }
 }
