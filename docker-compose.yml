@@ -6,7 +6,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "MyPassword"
     volumes:
       - drf_storefront:/var/lib/mysql
 volumes:
